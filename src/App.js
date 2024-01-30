@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import WindowSizeTracker from "./components/Windowsize";
 
 function App() {
   const [text, setText] = useState("");
@@ -34,6 +35,7 @@ function App() {
   return (
     <div className="App">
       <input type="text" onChange={clickHandler} />
+      <WindowSizeTracker />
     </div>
   );
 }
